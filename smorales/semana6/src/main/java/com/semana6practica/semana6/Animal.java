@@ -70,4 +70,10 @@ public class Animal {
     public void setType(String type) {
           this.type = type;
     }
+
+    public void updateListMember (Animal animal, int index) {
+        this.genAnimals();
+        animals.set(index, animal);
+        this.getAnimals();
+    }
 }
