@@ -11,6 +11,7 @@ public class Animal {
 
     private List<Animal> animals = new ArrayList<Animal>();
 
+    public Animal(){};    
     public Animal(String name, String type, String sound) {
         this.name = name;
         this.type = type;
@@ -22,12 +23,26 @@ public class Animal {
         return name;
     }
 
-    public String getAnimals() {
+    public void getAnimals() {
+  
 
         for (Animal animalIteracion : animals) {
             System.out.println(animalIteracion.getName());
         }
-        return animals.toString();
+       
+    }
+    public void genAnimals() {
+        Animal animal1 = new Animal("Perro", "Mamífero", "Guau");
+        Animal animal2 = new Animal("Gato", "Mamífero", "Miau");
+        Animal animal3 = new Animal("Pez", "Pez", "Glup");
+        Animal animal4 = new Animal("Pájaro", "Ave", "Pio");
+
+        animals.add(animal1);
+        animals.add(animal2);
+        animals.add(animal3);
+        animals.add(animal4);
+ 
+       
     }
 
     public void addAnimal(Animal animal)
@@ -54,6 +69,5 @@ public class Animal {
 
     public void setType(String type) {
           this.type = type;
-      
     }
 }
