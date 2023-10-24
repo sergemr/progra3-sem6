@@ -24,14 +24,22 @@ public class Animal {
     }
 
     public void getAnimals() {
-  
+        Animal animal1 = new Animal("Perro", "Mamífero", "Guau");
+        Animal animal2 = new Animal("Gato", "Mamífero", "Miau");
+        Animal animal3 = new Animal("Pez", "Pez", "Glup");
+        Animal animal4 = new Animal("Pájaro", "Ave", "Pio");
+
+        animals.add(animal1);
+        animals.add(animal2);
+        animals.add(animal3);
+        animals.add(animal4);
 
         for (Animal animalIteracion : animals) {
             System.out.println(animalIteracion.getName());
         }
        
     }
-    public void genAnimals() {
+   
         Animal animal1 = new Animal("Perro", "Mamífero", "Guau");
         Animal animal2 = new Animal("Gato", "Mamífero", "Miau");
         Animal animal3 = new Animal("Pez", "Pez", "Glup");
@@ -43,7 +51,7 @@ public class Animal {
         animals.add(animal4);
  
        
-    }
+    
 
     public void addAnimal(Animal animal)
     {
